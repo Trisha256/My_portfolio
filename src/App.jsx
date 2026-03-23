@@ -1,6 +1,23 @@
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Skills from './components/Skills';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+
 function App() {
   return (
     <div className="bg-gray-950 text-white min-h-screen font-sans">
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Experience />
+      <Projects />
+      <Contact />
+      <Footer />
 
       {/* Navbar */}
       <nav className="flex justify-between items-center px-8 py-5 border-b border-gray-800">
