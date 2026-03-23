@@ -1,13 +1,7 @@
-import Navbar from "../components/Navbar";
 import About from "../components/About";
 
 function AboutPage() {
-  return (
-    <>
-      <Navbar />
-      <About />
-    </>
-  );
+  return <About />;
 }
 
 export default AboutPage;

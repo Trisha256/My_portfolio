@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { FaUser, FaEnvelope, FaComment, FaPaperPlane } from 'react-icons/fa';
 
 function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
@@ -15,29 +16,41 @@ function Contact() {
   };
 
   return (
-    <section id="contact" className="px-6 py-20 max-w-2xl mx-auto">
-      <h3 className="text-3xl font-bold text-center mb-4">
-        Get In <span className="text-blue-500">Touch</span>
-      </h3>
-      <p className="text-center text-gray-400 mb-10">
-        Have a project in mind or just want to say hi? I&apos;d love to hear from you!
-      </p>
+    <section className="px-6 py-24 max-w-2xl mx-auto">
+      {/* Heading */}
+      <div className="text-center mb-12">
+        <h2 className="text-4xl font-bold mb-3">
+          Get In <span className="gradient-text">Touch</span>
+        </h2>
+        <p className="text-slate-400">
+          Have a project in mind or just want to say hi? I&apos;d love to hear from you!
+        </p>
+      </div>
 
       {submitted ? (
-        <div className="bg-green-900/40 border border-green-600 rounded-2xl px-6 py-8 text-center">
-          <p className="text-green-400 text-lg font-semibold mb-2">Message sent! 🎉</p>
-          <p className="text-gray-400">Thank you for reaching out. I&apos;llget back to you soon.</p>
+        <div className="bg-emerald-500/10 border border-emerald-500/40 rounded-2xl px-6 py-10 text-center">
+          <div className="text-4xl mb-4">🎉</div>
+          <p className="text-emerald-400 text-lg font-semibold mb-2">Message sent!</p>
+          <p className="text-slate-400 text-sm">
+            Thank you for reaching out. I&apos;ll get back to you soon.
+          </p>
           <button
             onClick={() => setSubmitted(false)}
-            className="mt-6 text-sm text-blue-400 hover:text-blue-300 transition underline cursor-pointer"
+            className="mt-6 text-sm text-indigo-400 hover:text-indigo-300 transition underline cursor-pointer"
           >
             Send another message
           </button>
         </div>
       ) : (
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form
+          onSubmit={handleSubmit}
+          className="bg-slate-800/50 border border-slate-700/60 rounded-2xl p-8 space-y-6"
+        >
+          {/* Name */}
           <div>
-            <label className="block text-sm text-gray-400 mb-1">Name</label>
+            <label className="flex items-center gap-2 text-sm text-slate-400 mb-2">
+              <FaUser size={12} /> Name
+            </label>
             <input
               type="text"
               name="name"
@@ -45,12 +58,15 @@ function Contact() {
               onChange={handleChange}
               required
               placeholder="Your name"
-              className="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"
+              className="w-full bg-slate-900/60 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/50 transition-all duration-200"
             />
           </div>
 
+          {/* Email */}
           <div>
-            <label className="block text-sm text-gray-400 mb-1">Email</label>
+            <label className="flex items-center gap-2 text-sm text-slate-400 mb-2">
+              <FaEnvelope size={12} /> Email
+            </label>
             <input
               type="email"
               name="email"
@@ -58,12 +74,15 @@ function Contact() {
               onChange={handleChange}
               required
               placeholder="youremail@example.com"
-              className="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"
+              className="w-full bg-slate-900/60 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/50 transition-all duration-200"
             />
           </div>
 
+          {/* Message */}
           <div>
-            <label className="block text-sm text-gray-400 mb-1">Message</label>
+            <label className="flex items-center gap-2 text-sm text-slate-400 mb-2">
+              <FaComment size={12} /> Message
+            </label>
             <textarea
               name="message"
               value={form.message}
@@ -71,15 +90,15 @@ function Contact() {
               required
               rows={5}
               placeholder="Your message..."
-              className="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 resize-none"
+              className="w-full bg-slate-900/60 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/50 transition-all duration-200 resize-none"
             />
           </div>
 
           <button
             type="submit"
-            className="w-full bg-blue-600 hover:bg-blue-700 transition py-3 rounded-xl font-semibold cursor-pointer"
+            className="btn-glow w-full flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-500 transition-all duration-200 py-3 rounded-xl font-semibold cursor-pointer"
           >
-            Send Message
+            <FaPaperPlane size={14} /> Send Message
           </button>
         </form>
       )}
