@@ -26,7 +26,7 @@ function Contact() {
       {submitted ? (
         <div className="bg-green-900/40 border border-green-600 rounded-2xl px-6 py-8 text-center">
           <p className="text-green-400 text-lg font-semibold mb-2">Message sent! 🎉</p>
-          <p className="text-gray-400">Thank you for reaching out. I&apos;ll get back to you soon.</p>
+          <p className="text-gray-400">Thank you for reaching out. I&apos;llget back to you soon.</p>
           <button
             onClick={() => setSubmitted(false)}
             className="mt-6 text-sm text-blue-400 hover:text-blue-300 transition underline cursor-pointer"
@@ -57,7 +57,7 @@ function Contact() {
               value={form.email}
               onChange={handleChange}
               required
-              placeholder="your.email@example.com"
+              placeholder="youremail@example.com"
               className="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"
             />
           </div>

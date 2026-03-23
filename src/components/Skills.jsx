@@ -15,23 +15,33 @@ const skillCategories = [
 
 function Skills() {
   return (
-    <section id="skills" className="px-6 py-20 bg-gray-900">
-      <div className="max-w-4xl mx-auto">
-        <h3 className="text-3xl font-bold text-center mb-10">
+    <section id="skills" className="px-6 py-24 bg-gray-900 text-white">
+      <div className="max-w-5xl mx-auto">
+        
+        {/* Title */}
+        <h3 className="text-4xl font-bold text-center mb-4">
           Technical <span className="text-blue-500">Skills</span>
         </h3>
+        <p className="text-center text-gray-400 mb-16">
+          Technologies and tools I use to build modern applications
+        </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Cards */}
+        <div className="grid gap-8 md:grid-cols-3">
           {skillCategories.map((category) => (
-            <div key={category.title} className="bg-gray-800 rounded-2xl p-6">
-              <h4 className="text-blue-400 font-semibold mb-4 text-lg">
+            <div
+              key={category.title}
+              className="bg-gray-800/80 backdrop-blur-lg border border-gray-700 rounded-2xl p-6 shadow-lg hover:shadow-blue-500/10 hover:-translate-y-2 transition duration-300"
+            >
+              <h4 className="text-blue-400 font-semibold mb-6 text-lg">
                 {category.title}
               </h4>
-              <div className="flex flex-wrap gap-2">
+
+              <div className="flex flex-wrap gap-3">
                 {category.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="bg-gray-700 text-gray-200 px-3 py-1 rounded-lg text-sm"
+                    className="bg-gray-700 hover:bg-blue-500/20 hover:text-blue-400 transition px-4 py-1.5 rounded-full text-sm cursor-default"
                   >
                     {skill}
                   </span>
@@ -40,6 +50,7 @@ function Skills() {
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
