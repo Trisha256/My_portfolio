@@ -69,8 +69,10 @@ function Hero() {
         {/* Social links */}
         <div className="flex justify-center gap-5 mb-14">
           <a
-            href="#"
+            href="https://github.com/Trisha256"
             aria-label="GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-slate-500 hover:text-white transition-colors duration-200 hover:scale-110 transform"
           >
             <FaGithub size={22} />
@@ -78,6 +80,8 @@ function Hero() {
           <a
             href="#"
             aria-label="LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-slate-500 hover:text-blue-400 transition-colors duration-200 hover:scale-110 transform"
           >
             <FaLinkedin size={22} />
@@ -85,6 +89,8 @@ function Hero() {
           <a
             href="#"
             aria-label="Twitter"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-slate-500 hover:text-sky-400 transition-colors duration-200 hover:scale-110 transform"
           >
             <FaTwitter size={22} />

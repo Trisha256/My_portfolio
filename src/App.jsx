@@ -8,6 +8,7 @@ import ProjectPage from "./pages/ProjectPage";
 import ContactPage from "./pages/ContactPage";
 import ExperiencePage from "./pages/ExperiencePage";
 import SkillsPage from "./pages/SkillsPage";
+import NotFound from "./pages/NotFound";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/experience" element={<ExperiencePage />} />
           <Route path="/skills" element={<SkillsPage />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />

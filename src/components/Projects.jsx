@@ -7,8 +7,8 @@ const projects = [
       "A personal portfolio built with React and Tailwind CSS to showcase my skills, experience, and projects.",
     tech: ["React", "Tailwind CSS", "Vite"],
     gradient: "from-indigo-500 to-violet-500",
-    github: "#",
-    demo: "#",
+    github: "https://github.com/Trisha256/My_portfolio",
+    demo: "https://my-portfolio-gamma-inky-29.vercel.app/",
   },
   {
     title: "Task Manager App",
@@ -77,12 +77,16 @@ function Projects() {
               <div className="flex gap-4 text-sm pt-1">
                 <a
                   href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-1.5 text-slate-400 hover:text-white transition-colors duration-200"
                 >
                   <FaGithub size={14} /> GitHub
                 </a>
                 <a
                   href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-1.5 text-indigo-400 hover:text-indigo-300 transition-colors duration-200"
                 >
                   <FaExternalLinkAlt size={12} /> Live Demo

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaTwitter, FaHeart } from "react-icons/fa";
 
 const socialLinks = [
-  { href: "#", icon: <FaGithub size={18} />, label: "GitHub" },
+  { href: "https://github.com/Trisha256", icon: <FaGithub size={18} />, label: "GitHub" },
   { href: "#", icon: <FaLinkedin size={18} />, label: "LinkedIn" },
   { href: "#", icon: <FaTwitter size={18} />, label: "Twitter" },
 ];
@@ -49,6 +49,8 @@ function Footer() {
                 key={label}
                 href={href}
                 aria-label={label}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-slate-500 hover:text-indigo-400 transition-colors duration-200 hover:scale-110 transform"
               >
                 {icon}
