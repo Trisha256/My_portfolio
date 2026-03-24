@@ -1,5 +1,5 @@
 
-# Trisha's Portfolio
+# My Portfolio
 
 A modern, responsive personal portfolio website built with **React**, **Vite**, and **Tailwind CSS** — showcasing my skills, projects, experience, and more.
 
