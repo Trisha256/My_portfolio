@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
-import { FaGithub, FaLinkedin, FaTwitter, FaHeart } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaHeart, FaYoutube } from "react-icons/fa";
 
 const socialLinks = [
-  { href: "#", icon: <FaGithub size={18} />, label: "GitHub" },
-  { href: "#", icon: <FaLinkedin size={18} />, label: "LinkedIn" },
-  { href: "#", icon: <FaTwitter size={18} />, label: "Twitter" },
+  { href: "https://www.github.com/Trisha256", icon: <FaGithub size={18} />, label: "GitHub" },
+  { href: "https://www.linkedin.com/in/patricia-kemirembe-b808a2159/", icon: <FaLinkedin size={18} />, label: "LinkedIn" },
+  { href: "https://www.youtube.com/letscode", icon: <FaYoutube size={18} />, label: "YouTube" },
+  { href: "https://x.com/KemirembePatri1", icon: <FaTwitter size={18} />, label: "Twitter" },
 ];
 
 const navLinks = [

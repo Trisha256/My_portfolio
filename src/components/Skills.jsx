@@ -1,3 +1,4 @@
+import { CgVercel } from "react-icons/cg";
 import { FaCode, FaServer, FaTools } from "react-icons/fa";
 
 const skillCategories = [

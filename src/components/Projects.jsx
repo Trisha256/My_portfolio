@@ -7,7 +7,7 @@ const projects = [
       "A personal portfolio built with React and Tailwind CSS to showcase my skills, experience, and projects.",
     tech: ["React", "Tailwind CSS", "Vite"],
     gradient: "from-indigo-500 to-violet-500",
-    github: "#",
+    github: "https://github.com/Trisha256/My_portfolio",
     demo: "#",
   },
   {
@@ -16,8 +16,8 @@ const projects = [
       "A full-stack task management application with user authentication, CRUD operations, and a clean UI.",
     tech: ["React", "Node.js", "Express", "MongoDB"],
     gradient: "from-violet-500 to-fuchsia-500",
-    github: "#",
-    demo: "#",
+    github: "https://github.com/Trisha256/Task-Manager-App",
+    demo: "https://task-manager-app-one-lovat.vercel.app/",
   },
   {
     title: "Weather Dashboard",
@@ -25,9 +25,37 @@ const projects = [
       "A weather dashboard that fetches real-time weather data from an API and displays it with charts.",
     tech: ["JavaScript", "OpenWeather API", "Chart.js"],
     gradient: "from-cyan-500 to-blue-500",
-    github: "#",
-    demo: "#",
+    github: "https://github.com/Trisha256/Weather_Dashboard_App",
+    demo: "https://weather-dashboard-app-lake.vercel.app/",
   },
+  {
+    title: "Food Journal App",
+    description:
+      "A food journal app that allows users to log meals, track calories, and visualize their eating habits.",
+    tech: ["React", "Node.js", "Express", "SQLite"],
+    gradient: "from-pink-500 to-red-500",
+    github: "https://github.com/Trisha256/Food_Journal_App",
+    demo: "https://food-journal-app.vercel.app/",
+  },
+{
+  title: "OctoFit_Tracker-App",
+  description:
+    "A fitness tracking app that helps users log workouts, set goals, and monitor progress over time.",
+  tech: ["React", "Node.js", "Express", "MongoDB"],
+  gradient: "from-green-500 to-teal-500",
+  github: "https://github.com/Trisha256/OctoFit_Tracker-App",
+  demo: "https://octo-fit-tracker-app.vercel.app/",
+},
+
+{
+  title: "Currency Converter",
+  description:
+    "A simple currency converter that fetches real-time exchange rates and allows users to convert between different currencies.",
+  tech: ["JavaScript", "ExchangeRate-API"],
+  gradient: "from-amber-500 to-orange-500",
+  github: "https://github.com/Trisha256/Currency_Converter_App",
+  demo: "https://currency-converter-app.vercel.app/",
+}
 ];
 
 function Projects() {

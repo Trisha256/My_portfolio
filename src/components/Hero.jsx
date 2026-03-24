@@ -7,6 +7,7 @@ import {
   FaGithub,
   FaLinkedin,
   FaTwitter,
+  FaYoutube,
 } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 
@@ -69,23 +70,30 @@ function Hero() {
         {/* Social links */}
         <div className="flex justify-center gap-5 mb-14">
           <a
-            href="#"
+            href="https://www.github.com/Trisha256"
             aria-label="GitHub"
             className="text-slate-500 hover:text-white transition-colors duration-200 hover:scale-110 transform"
           >
             <FaGithub size={22} />
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/patricia-kemirembe-b808a2159/"
             aria-label="LinkedIn"
             className="text-slate-500 hover:text-blue-400 transition-colors duration-200 hover:scale-110 transform"
           >
             <FaLinkedin size={22} />
           </a>
           <a
-            href="#"
-            aria-label="Twitter"
+            href="https://www.youtube.com/letscode"
+            aria-label="YouTube"
             className="text-slate-500 hover:text-sky-400 transition-colors duration-200 hover:scale-110 transform"
+          >
+            <FaYoutube size={22} />
+          </a>
+          <a
+            href="https://x.com/KemirembePatri1"
+            aria-label="Twitter"
+            className="text-slate-500 hover:text-cyan-400 transition-colors duration-200 hover:scale-110 transform"
           >
             <FaTwitter size={22} />
           </a>
