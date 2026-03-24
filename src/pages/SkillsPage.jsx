@@ -1,13 +1,7 @@
-import Navbar from "../components/Navbar";
 import Skills from "../components/Skills";
 
 function SkillsPage() {
-  return (
-    <>
-      <Navbar />
-      <Skills />
-    </>
-  );
+  return <Skills />;
 }
 
 export default SkillsPage;

@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
 import AboutPage from "./pages/AboutPage";
@@ -11,23 +12,21 @@ import SkillsPage from "./pages/SkillsPage";
 
 function App() {
   return (
-    <>
-    <div className="bg-gray-900 text-white min-h-screen">
-      <div className="max-w-6xl mx-auto px-6"></div>
+    <div className="bg-[#0a0e1a] text-slate-100 min-h-screen flex flex-col">
       <Navbar />
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/projects" element={<ProjectPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/experience" element={<ExperiencePage />} />
-        <Route path="/skills" element={<SkillsPage />} />
-      </Routes>
-      </div>
-    </>
-    
+      <main className="flex-1">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/projects" element={<ProjectPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/experience" element={<ExperiencePage />} />
+          <Route path="/skills" element={<SkillsPage />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
   );
 }
 
-  export default App;
+export default App;

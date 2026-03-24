@@ -1,3 +1,5 @@
+import { FaBriefcase } from "react-icons/fa";
+
 const experiences = [
   {
     role: "Frontend Developer Intern",
@@ -24,20 +26,44 @@ const experiences = [
 
 function Experience() {
   return (
-    <section id="experience" className="px-6 py-20 max-w-4xl mx-auto">
-      <h3 className="text-3xl font-bold text-center mb-10">
-        Work <span className="text-blue-500">Experience</span>
-      </h3>
+    <section className="px-6 py-24 max-w-4xl mx-auto">
+      {/* Heading */}
+      <div className="text-center mb-16">
+        <h2 className="text-4xl font-bold mb-3">
+          Work <span className="gradient-text">Experience</span>
+        </h2>
+        <p className="text-slate-400 max-w-xl mx-auto">
+          My professional journey so far
+        </p>
+      </div>
 
-      <div className="space-y-10">
-        {experiences.map((exp, index) => (
-          <div key={index} className="border-l-2 border-blue-500 pl-6">
-            <h4 className="text-xl font-semibold">{exp.role}</h4>
-            <p className="text-blue-400 font-medium">{exp.company}</p>
-            <p className="text-gray-500 text-sm mb-3">{exp.duration}</p>
-            <p className="text-gray-400">{exp.description}</p>
-          </div>
-        ))}
+      {/* Timeline */}
+      <div className="relative">
+        {/* Vertical line */}
+        <div className="absolute left-5 top-0 bottom-0 w-px bg-gradient-to-b from-indigo-500 via-violet-500 to-transparent" />
+
+        <div className="space-y-10">
+          {experiences.map((exp, index) => (
+            <div key={index} className="relative flex gap-8 group">
+              {/* Timeline dot */}
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500/20 border-2 border-indigo-500 flex items-center justify-center text-indigo-400 z-10">
+                <FaBriefcase size={14} />
+              </div>
+
+              {/* Card */}
+              <div className="flex-1 bg-slate-800/50 border border-slate-700/60 rounded-2xl p-6 hover:border-indigo-500/40 transition-all duration-300 group-hover:-translate-y-0.5">
+                <div className="flex flex-wrap items-start justify-between gap-2 mb-2">
+                  <h3 className="text-lg font-semibold text-white">{exp.role}</h3>
+                  <span className="text-xs text-slate-500 bg-slate-700/60 px-2.5 py-1 rounded-full whitespace-nowrap">
+                    {exp.duration}
+                  </span>
+                </div>
+                <p className="text-indigo-400 text-sm font-medium mb-3">{exp.company}</p>
+                <p className="text-slate-400 text-sm leading-relaxed">{exp.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
