@@ -5,7 +5,7 @@ A modern, responsive personal portfolio website built with **React**, **Vite**, 
 
 ## 🌐 Live Demo
 
-🔗 [https://trisha256.github.io/My_portfolio/](https://trisha256.github.io/My_portfolio/)
+🔗 https://my-portfolio-gamma-inky-29.vercel.app/
 
 ---
 
