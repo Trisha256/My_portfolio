@@ -2,23 +2,29 @@ import { FaBriefcase } from "react-icons/fa";
 
 const experiences = [
   {
+    role: "Learning Ambassador",
+    company: "ALX Africa",
+    duration: "sep 2023 – Dec 2024",
+    description: "Organizing peer learning sessions with my colleagues every week to discuss and share our understanding of the current projects. Passing on learning messages to the rest of my peers to ensure we all get the best out of the program. Participating in learning, by inspiring others and empowering them to take part in learning activities"
+  },
+  {
     role: "Frontend Developer Intern",
     company: "Tech Startup",
-    duration: "Jun 2024 – Sep 2024",
+    duration: "Jan 2024 – May 2024",
     description:
       "Developed responsive UI components using React and Tailwind CSS. Collaborated with the design team to implement pixel-perfect interfaces and improved overall page load performance.",
   },
   {
     role: "Web Development Volunteer",
-    company: "Local NGO",
-    duration: "Jan 2024 – May 2024",
+    company: "Event Box",
+    duration: "Jun 2024 – Dec 2024",
     description:
       "Built and maintained the organization's website using HTML, CSS, and JavaScript. Improved site performance, accessibility, and mobile responsiveness.",
   },
   {
     role: "Freelance Developer",
     company: "Self-employed",
-    duration: "2023 – Present",
+    duration: "Dec 2023 – Present",
     description:
       "Delivered custom web solutions for small businesses including landing pages, portfolio sites, and simple web applications tailored to client requirements.",
   },
