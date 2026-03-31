@@ -8,7 +8,16 @@ const projects = [
     tech: ["React", "Tailwind CSS", "Vite"],
     gradient: "from-indigo-500 to-violet-500",
     github: "https://github.com/Trisha256/My_portfolio",
-    demo: "#",
+    demo: "https://my-portfolio-gamma-inky-29.vercel.app/",
+  },
+  {
+    title: "TeachReflect App",
+    description:
+      "A web application that allows teachers to reflect on their teaching practices, set goals, and track progress over time.",
+    tech: ["React", "Node.js", "Express", "MongoDB"],
+    gradient: "from-green-500 to-teal-500",
+    github: "https://github.com/Trisha256/TeachReflect_App",
+    demo: "https://teach-reflect-app-ntdu.vercel.app/",
   },
   {
     title: "Task Manager App",
