@@ -16,8 +16,8 @@ const projects = [
       "A web application that allows teachers to reflect on their teaching practices, set goals, and track progress over time.",
     tech: ["React", "Node.js", "Express", "MongoDB"],
     gradient: "from-green-500 to-teal-500",
-    github: "https://github.com/Trisha256/TeachReflect_App",
-    demo: "https://teach-reflect-app-ntdu.vercel.app/",
+    github: "https://github.com/Trisha256/TeachReflect_APP",
+    demo: "https://teach-reflect-app-sjuu.vercel.app/login",
   },
   {
     title: "Task Manager App",
